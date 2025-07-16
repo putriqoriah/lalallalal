@@ -1,0 +1,196 @@
+/* Font & Warna Dasar */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffdf6; /* Putih kekuningan */
+  color: #333;
+}
+
+/* Header & Footer */
+.header,
+.footer {
+  background-color: #ccf3c2; /* Hijau pastel */
+  padding: 20px;
+  text-align: center;
+  border-radius: 0 0 40px 40px;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #4b6b50;
+  margin: 0;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Navigasi */
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #4b6b50;
+  font-weight: bold;
+}
+
+.nav-menu a.active {
+  color: #f7a900;
+}
+
+/* Scroll horizontal produk */
+.produk-list {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 30px;
+}
+
+.produk-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+/* Kartu Produk */
+.produk-card {
+  background-color: #fff4cc; /* Kuning pastel */
+  border-radius: 30px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 0 0 auto; /* Scroll horizontal */
+}
+
+.produk-card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.produk-card h3 {
+  margin-top: 10px;
+}
+
+.harga {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Tombol Keranjang & WhatsApp */
+.btn-keranjang {
+  background-color: #5c755e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#whatsappLink button {
+  background-color: #25d366; /* Warna WhatsApp */
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Halaman Keranjang */
+.keranjang {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fff4cc;
+  padding: 30px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.item-keranjang {
+  background-color: #f8f8f8;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hapus-item {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.keranjang p {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Kontak & Tentang */
+.kontak-form,
+.tentang-kami {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #fff4cc;
+  padding: 30px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.kontak-form input,
+.kontak-form textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+}
+
+.kontak-form button {
+  background-color: #5c755e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Responsif Mobile */
+@media screen and (max-width: 768px) {
+  .produk-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .produk-card {
+    width: 90%;
+  }
+}

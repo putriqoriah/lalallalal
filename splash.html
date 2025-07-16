@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to Valokuva</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fdf6e3;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+
+    .checker-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        45deg,
+        #a8dadc,
+        #a8dadc 20px,
+        #f1faee 20px,
+        #f1faee 40px
+      );
+      filter: blur(4px);
+      opacity: 0.3;
+      z-index: -1;
+    }
+
+    .splash-container {
+      text-align: center;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #264653;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #2a9d8f;
+      margin-bottom: 25px;
+    }
+
+    a.button {
+      display: inline-block;
+      background-color: #2a9d8f;
+      color: white;
+      padding: 12px 28px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #21867a;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="checker-bg"></div>
+  <div class="splash-container">
+    <h1>Welcome to Valokuva Store!</h1>
+    <p>Cetak Kenangan, Bawa ke Masa Depan</p>
+    <a href="index.html" class="button">Masuk ke Toko</a>
+  </div>
+</body>
+</html>
